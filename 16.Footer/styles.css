@@ -1,0 +1,116 @@
+:root {
+    --border: 1px solid #1c1c1c;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    background: #0c0c0c;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+section {
+    height: 50vh;
+}
+
+footer {
+    margin-top: 200px;
+    /*background: #020202;*/
+    padding: 0 70px;
+    position: relative;
+    bottom: 0;
+    display: flex;
+    flex-wrap: wrap;
+    border-top: var(--border);
+    justify-content: stretch;
+    min-height: 65vh;
+    background: radial-gradient(circle at top, rgba(255, 255, 255, 0.24) 0%, transparent 40%), #020202;
+}
+
+footer .box {
+    flex: 1 0 25%;
+    border: var(--border);
+}
+
+footer .box .header {
+    display: flex;
+    width: 100%;
+    margin-bottom: 70px;
+    border-bottom: var(--border);
+    padding: 24px;
+}
+footer .box .header h2 {
+    font-size: 18px;
+    flex: 1;
+    color: white;
+    font-weight: 600;
+}
+
+footer .box .header i {
+    font-size: 14px;
+    margin-left: auto;
+    color: #ddd;
+    transition: transform 0.3s ease;
+    margin-right: 6px
+}
+footer .box .header:hover i {
+    transform: translateX(6px);
+}
+
+footer .box .content {
+    padding: 24px;
+}
+footer .box .content h3 {
+    color: gray;
+    font-size: 15px;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+    font-weight: 500;
+}
+footer .box .content ul {
+
+    li {
+        margin-bottom: 14px;
+        a {
+            font-size: 16px;
+            color: #b5b5b5;
+        }
+    }
+    a:hover {
+        color: #ededed;
+    }
+}
+
+@media (max-width: 1300px) {
+    footer .box {
+        flex: 1 0 33%;
+    }
+}
+
+@media (max-width: 1000px) {
+    footer .box {
+        flex: 1 0 50%;
+    }
+}
+
+@media (max-width: 550px) {
+    footer {
+        flex-direction: column;
+        padding: 20px;
+        background: radial-gradient(circle at top, rgba(255, 255, 255, 0.14) 0%, transparent 40%), #020202;
+    }
+    footer .box {
+        flex: 1 0 100%;
+        margin-bottom: 20px;
+    }
+}
+

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Simple Modal Popup</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<button class="btn" id="open">Open modal popup</button>
+<div class="popup" id="popup">
+  <div class="content">
+    <h2>Simple Modal popup</h2>
+    <p>This is some containing of the modal popup. Press button to close it.</p>
+    <button class="btn" id="close">Close</button>
+  </div>
+</div>
+
+<script>
+document.getElementById("open").addEventListener("click", () => {
+  document.getElementById("popup").classList.add("active");
+});
+document.getElementById("close").addEventListener("click", () => {
+  document.getElementById("popup").classList.remove("active");
+})
+</script>
+</body>
+</html>

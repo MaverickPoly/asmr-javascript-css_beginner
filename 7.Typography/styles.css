@@ -1,0 +1,45 @@
+body {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.italic {
+    font-style: italic;
+}
+.underline {
+    text-decoration: underline;
+}
+.strikethrough {
+    text-decoration: line-through;
+}
+.highlight {
+    background: yellow;
+}
+.shadow {
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
+}
+.uppercase {
+    text-transform: uppercase;
+}
+.lowercase {
+    text-transform: lowercase;
+}
+.capitalize {
+    text-transform: capitalize;
+}
+.large {
+    font-size: 1.4em;
+}
+.small {
+    font-size: 0.8em;
+}
+.colored {
+    color: blue;
+}
+.custom-font {
+    font-family: "Courier New", monospace;
+}

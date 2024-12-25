@@ -1,0 +1,64 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.grid {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 20px;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    border: 3px solid gray;
+    border-radius: 8px;
+    transition: all 0.2s;
+    cursor: pointer;
+}
+
+img.scale:hover {
+    scale: 105%;
+}
+
+img.border {
+    border: 3px solid transparent;
+}
+img.border:hover {
+    border: 3px solid blue;
+}
+
+img.bright:hover {
+    filter: brightness(1.4);
+}
+
+img.opacity:hover {
+    opacity: 0.5;
+}
+
+img.rotate:hover {
+    transform: rotate(-15deg);
+}
+
+
+/*img.color {*/
+/*    position: relative;*/
+/*    display: block;*/
+/*}*/
+
+/*img.color:hover::before {*/
+/*    content: "";*/
+/*    position: absolute;*/
+/*    inset: 0;*/
+/*    background-color: green;*/
+/*    z-index: 1;*/
+/*    pointer-events: none;*/
+/*}*/
+
+img.shadow:hover {
+    /* Emboss Filter */
+    filter: drop-shadow(0 0 20px rgba(0, 0, 0, 0.8));
+}

@@ -1,0 +1,136 @@
+* {
+    padding: 0;
+    list-style: none;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    text-decoration: none;
+    border: none;
+    outline: none;
+}
+
+body {
+    height: 100vh;
+    /*background: #ffffff;*/
+}
+
+
+.menu-line {
+    width: 27px;
+    height: 3px;
+    background-color: black;
+    margin: 5px 0;
+}
+
+
+.navbar {
+    display: flex;
+    width: 100%;
+    position: sticky;
+    justify-content: space-between;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.47);
+}
+
+.navbar .logo {
+    margin-left: 30px;
+    display: flex;
+    align-items: center;
+}
+.navbar .logo img {
+    width: 47px;
+    height: 47px;
+    border-radius: 50%;
+}
+.navbar .logo h2 {
+    color: #2b2b2b;
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+.navbar .nav-links {
+    display: flex;
+    gap: 16px;
+}
+
+.navbar .nav-links li {
+    display: flex;
+    align-items: center;
+}
+.navbar .nav-links li a {
+    color: black;
+    padding: 8px;
+    font-size: 18px;
+    font-weight: 500;
+}
+.navbar .nav-links li a:hover {
+    color: #c503c5;
+}
+
+
+.navbar .nav-actions {
+    margin-right: 30px;
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+.navbar .nav-actions .menu-btn {
+    background: white;
+    cursor: pointer;
+}
+
+.navbar .nav-actions .btn {
+    background: #f8f8f8;
+    color: black;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 8px;
+    padding: 8px 16px;
+    border: 1px solid gray;
+    transition: background-color 0.3s;
+}
+
+.navbar .nav-actions .btn:hover {
+    background: gray;
+    color: white;
+}
+
+
+@media (min-width: 768px) {
+    #menu-btn {
+        display: none;
+    }
+
+    .close-btn {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar .nav-links {
+        display: none;
+        background: white;
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 300px;
+        flex-direction: column;
+        height: 100vh;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        padding: 30px 14px 14px;
+    }
+    .navbar .nav-links.active {
+        display: flex;
+    }
+
+    .close-btn {
+        display: block;
+        font-size: 32px;
+        font-weight: bold;
+        cursor: pointer;
+        margin-right: auto;
+        margin-left: 10px;
+        background: none;
+    }
+}

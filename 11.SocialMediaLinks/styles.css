@@ -1,0 +1,80 @@
+.social-icons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+.icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+/* Facebook */
+.icon.facebook {
+    background-color: #3b5998;
+}
+.icon.facebook:hover {
+    background-color: #8b9dc3;
+    transform: scale(1.1);
+}
+
+/* Twitter */
+.icon.twitter {
+    background-color: #1da1f2;
+}
+.icon.twitter:hover {
+    background-color: #87ceeb;
+    transform: rotate(360deg);
+}
+
+/* Instagram */
+.icon.instagram {
+    background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+}
+.icon.instagram:hover {
+    filter: brightness(1.3);
+    box-shadow: 0 0 10px rgba(188, 24, 136, 0.8);
+}
+
+
+/* Linkedin */
+.icon.linkedin {
+    background-color: #0077b5;
+}
+.icon.linkedin:hover {
+    background-color: #005582;
+    transform: translateY(-5px);
+}
+
+
+/* Youtube */
+.icon.youtube::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 50%;
+    border: 2px solid transparent;
+    transition: border-color 0.3s ease, transform 0.3s ease;
+    z-index: -1;
+}
+.icon.youtube {
+    background-color: #ff0000;
+    position: relative;
+}
+
+.icon.youtube:hover::before {
+    border-color: #8f2500;
+    transform: scale(1.2);
+}
+
+.icon.youtube:hover {
+    background-color: #cc0000;
+}

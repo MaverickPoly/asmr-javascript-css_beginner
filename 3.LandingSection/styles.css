@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    list-style: none;
+    color: white;
+    font-family: "Poppins", sans-serif;
+}
+
+.absolute-bg {
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    overflow: hidden;
+    opacity: 10%;
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.svg-pattern {
+    position: absolute;
+    left: max(50%, 25rem);
+    top: 0;
+    height: 64rem;
+    width: 128rem;
+    transform: translateX(-50%);
+    stroke: rgb(229, 231, 235); /* Matches stroke-gray-200 */
+    mask-image: radial-gradient(circle 64rem at top, white, transparent);
+    -webkit-mask-image: radial-gradient(circle 64rem at top, white, transparent);
+}
+
+.pattern-rect {
+    width: 100%;
+    height: 100%;
+}
+
+.hero {
+    z-index: 10;
+    background: rgba(14, 13, 20, 1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    position: relative;
+    overflow: hidden;
+    color: white;
+}
+
+
+.hero .container {
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.hero .container .header {
+    font-size: 40px;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 26px;
+    line-height: 62px;
+}
+
+.hero .container .header span {
+    font-size: 60px;
+    font-weight: 500;
+}
+
+.hero .container .description {
+    font-size: 14px;
+    text-align: center;
+    max-width: 640px;
+    line-height: 160%;
+    margin-bottom: 40px;
+}
+
+.hero .container .input-box {
+    display: flex;
+    justify-content: space-between;
+    background: #211f29;
+    width: 380px;
+    padding: 3px;
+    border-radius: 22px;
+    border: 2px solid #6a6a6a;
+    margin: 0 auto 20px;
+}
+
+.hero .container .input-box .input {
+    padding: 9px;
+    font-size: 14px;
+    color: white;
+    background: transparent;
+    flex: 1;
+}
+
+.hero .container .input-box .btn {
+    border-radius: 22px;
+    padding: 4px 20px;
+    width: 180px;
+    background: linear-gradient(to right, #2f2748, #5e3ab8);
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.hero .container .more-box {
+    display: flex;
+    justify-content: center;
+}
+
+.hero .container .more-box p {
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 70px;
+}
+
+.hero .container .more-box p a {
+    color: #785baf;
+}
+
+.hero img {
+    width: 1200px;
+    margin: 0 auto;
+    height: 600px;
+    object-fit: cover;
+    display: block;
+    object-position: top;
+}
